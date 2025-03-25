@@ -7,4 +7,4 @@ env:
     required: true
 routes:
   - path: /mcp
-    type: http 
+    type: http

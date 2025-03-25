@@ -1,0 +1,2 @@
+# No additional Python dependencies required
+# The server uses Node.js dependencies defined in package.json 

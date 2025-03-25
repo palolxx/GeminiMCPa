@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gemini-sequential-thinking": {
+      "command": "node",
+      "args": ["%USERPROFILE%\\GeminiMCP\\server\\gemini_mcp_server.js"],
+      "env": {
+        "DEBUG": "*",
+        "GEMINI_API_KEY": "your-api-key-here"
+      }
+    }
+  }
+} 

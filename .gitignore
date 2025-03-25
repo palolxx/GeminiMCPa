@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+geminikey.txt
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Cache directories
+cache/
+.cache/
+
+# Session data
+sessions/
+
+# Python virtual environments
+.venv/
+__pycache__/
+*.py[cod]
+
+# Build output
+dist/
+build/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo 

@@ -1,0 +1,9 @@
+name: gemini-mcp
+description: Gemini MCP server that enables using Google's Gemini AI models through the Model Context Protocol (MCP).
+port: 3030
+env:
+  - name: GEMINI_API_KEY
+    description: Your Google AI Studio API key for Gemini
+    required: true
+
+path: /mcp 

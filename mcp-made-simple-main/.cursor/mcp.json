@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "/Users/chong-u/.local/bin/supabase-mcp-server",
+      "env": {
+        "SUPABASE_PROJECT_REF": "<project",
+        "SUPABASE_DB_PASSWORD": "<password>",
+        "SUPABASE_REGION": "eu-central-1",
+        "SUPABASE_ACCESS_TOKEN": "<access-token>",
+        "SUPABASE_SERVICE_ROLE_KEY": "<service-role-key"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@keyframes buyPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+
+.buying {
+  animation: buyPulse 0.3s ease-in-out;
+}
+
+.card {
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  pointer-events: none;
+  transition: border-color 0.2s;
+}
+
+/* Rarity borders */
+.common::before { border-color: #9d9d9d; }
+.uncommon::before { border-color: #1eff00; }
+.rare::before { border-color: #0070dd; }
+.epic::before { border-color: #a335ee; }
+.legendary::before { border-color: #ff8000; }
+
+.name {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+
+/* Rarity text colors */
+.common .name { color: #9d9d9d; }
+.uncommon .name { color: #1eff00; }
+.rare .name { color: #0070dd; }
+.epic .name { color: #a335ee; }
+.legendary .name { color: #ff8000; }
+
+.quantity {
+  font-family: 'Crimson Text', serif;
+  color: #c0a080;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.quantity::before {
+  content: '×';
+  opacity: 0.7;
+}
+
+.date {
+  font-family: 'Crimson Text', serif;
+  color: #808080;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.buyButton {
+  background: #4a3d2c;
+  color: #c0a080;
+  border: 1px solid #6d593f;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.buyButton:hover:not(:disabled) {
+  background: #5a4d3c;
+  border-color: #7d694f;
+  color: #d0b090;
+}
+
+.buyButton:disabled {
+  background: #2a2a2a;
+  border-color: #3d3d3d;
+  color: #666;
+  cursor: not-allowed;
+}
